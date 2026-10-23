@@ -1,0 +1,19 @@
+[package]
+name = "statement-ofx"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.85"
+description = "OFX bank statement adapter producing recon-kit Statements — sign-normalising, float-free amounts, hand-rolled SGML scan with zero dependencies"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/WyattAu/statement-ofx"
+keywords = ["ofx", "banking", "accounting", "reconciliation", "finance"]
+categories = ["finance", "parser-implementations"]
+
+[dependencies]
+recon-kit = "=0.1.0"
+
+[lints.clippy]
+unwrap_used = "deny"
+expect_used = "deny"
+indexing_slicing = "deny"
+panic = "deny"
