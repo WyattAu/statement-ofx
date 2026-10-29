@@ -1,6 +1,6 @@
 [package]
 name = "statement-ofx"
-version = "0.1.1"
+version = "0.1.2"
 edition = "2024"
 rust-version = "1.85"
 description = "OFX bank statement adapter producing recon-kit Statements: sign-normalising, float-free amounts, zero dependencies beyond the model"
@@ -10,7 +10,7 @@ keywords = ["ofx", "banking", "accounting", "reconciliation", "finance"]
 categories = ["finance", "parser-implementations"]
 
 [dependencies]
-recon-kit = "=0.1.0"
+recon-kit = "=0.1.1"
 
 [lints.clippy]
 unwrap_used = "deny"
