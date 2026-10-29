@@ -5,6 +5,13 @@ Changelog](https://keepachangelog.com/) — versions follow [semver](https://sem
 
 ## [Unreleased]
 
+## [0.1.3] - 2026-10-28
+
+### Changed
+
+- Tracks `recon-kit 0.2.0` (the reference-matching release; LedgerSide gains a `memo` field). No behavioural change to the OFX parsing.
+
+
 ## [0.1.0] - 2026-10-07
 
 Initial release.
