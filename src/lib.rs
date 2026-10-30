@@ -150,10 +150,7 @@ fn split_tag_blocks(input: &str, tag: &str) -> Vec<String> {
     let lower_close = close.to_lowercase();
     let mut blocks = Vec::new();
     let mut rest = input;
-    loop {
-        let Some(open_pos) = rest.to_lowercase().find(&lower_open) else {
-            break;
-        };
+    while let Some(open_pos) = rest.to_lowercase().find(&lower_open) {
         let after_open = open_pos + open.len();
         let Some(close_rel) = rest[after_open..].to_lowercase().find(&lower_close) else {
             break;
